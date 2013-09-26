@@ -190,6 +190,7 @@ FcitxSayuraCreate(FcitxInstance *instance)
     /* FcitxInputState *input = FcitxInstanceGetInputState(instance); */
     __pfunc__();
     bindtextdomain("fcitx-sayura", LOCALEDIR);
+    bind_textdomain_codeset("fcitx-sayura", "UTF-8");
 
     sayura->hack = 0;
     sayura->owner = instance;
