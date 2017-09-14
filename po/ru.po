@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fcitx5-sayura\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2018-01-02 15:56-0800\n"
-"PO-Revision-Date: 2016-11-30 21:35+0000\n"
+"POT-Creation-Date: 2017-09-14 16:03-0700\n"
+"PO-Revision-Date: 2017-08-03 16:58+0000\n"
 "Last-Translator: TotalCaesar659 <x24cm5b8c54q6szxw@yandex.ru>\n"
 "Language-Team: Russian (http://www.transifex.com/fcitx/fcitx/language/ru/)\n"
 "Language: ru\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
+<<<<<<< HEAD
 
 #: data/fcitx-sayura.conf.in:4
 msgid "Sayura Sinhala Input Method For Fcitx"
@@ -31,3 +32,13 @@ msgstr "Sinhala (Sayura)"
 #: src/fcitx-sayura.conf.in:3
 msgid "fcitx-sayura"
 msgstr ""
+=======
+
+#: data/fcitx-sayura.conf.in:4
+msgid "Sayura Sinhala Input Method For Fcitx"
+msgstr "Метод ввода Sayura Sinhala для Fcitx"
+
+#: src/eim.c:206 data/fcitx-sayura.conf.in:3 data/sayura.conf.in:3
+msgid "Sinhala (Sayura)"
+msgstr "Sinhala (Sayura)"
+>>>>>>> 7abbc28... [trans] Update Translation
