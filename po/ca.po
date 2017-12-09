@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2017
 # Walter Garcia-Fontes <walter.garcia@upf.edu>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx5-sayura\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2018-01-02 15:56-0800\n"
-"PO-Revision-Date: 2017-01-06 16:24+0000\n"
-"Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"POT-Creation-Date: 2017-12-09 00:03-0800\n"
+"PO-Revision-Date: 2017-12-08 18:15+0000\n"
+"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/fcitx/fcitx/language/ca/)\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +21,8 @@ msgstr ""
 
 #: data/fcitx-sayura.conf.in:4
 msgid "Sayura Sinhala Input Method For Fcitx"
-msgstr "Mètode d'entrada sayura sinhala per al fcitx"
+msgstr "Mètode d'entrada sayura sinhala per a fcitx"
 
-#: src/eim.c:205 data/fcitx-sayura.conf.in:3 data/sayura.conf.in:3
+#: src/eim.c:206 data/fcitx-sayura.conf.in:3 data/sayura.conf.in:3
 msgid "Sinhala (Sayura)"
 msgstr "Sinhala (Sayura)"
-
-#: src/fcitx-sayura.conf.in:3
-msgid "fcitx-sayura"
-msgstr ""
