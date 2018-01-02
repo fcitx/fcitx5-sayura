@@ -6,9 +6,9 @@
 # Thu Hoai <contact@bizover.net>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: fcitx\n"
+"Project-Id-Version: fcitx5-sayura\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2015-12-11 23:17-0800\n"
+"POT-Creation-Date: 2018-01-02 15:56-0800\n"
 "PO-Revision-Date: 2013-07-30 14:58+0000\n"
 "Last-Translator: Thu Hoai <contact@bizover.net>\n"
 "Language-Team: Vietnamese (http://www.transifex.com/fcitx/fcitx/language/"
@@ -23,6 +23,10 @@ msgstr ""
 msgid "Sayura Sinhala Input Method For Fcitx"
 msgstr "Bộ nhập liệu Sayura Sinhala cho Fcitx"
 
-#: src/eim.c:206 data/fcitx-sayura.conf.in:3 data/sayura.conf.in:3
+#: src/eim.c:205 data/fcitx-sayura.conf.in:3 data/sayura.conf.in:3
 msgid "Sinhala (Sayura)"
 msgstr "Sinhala (Sayura)"
+
+#: src/fcitx-sayura.conf.in:3
+msgid "fcitx-sayura"
+msgstr ""

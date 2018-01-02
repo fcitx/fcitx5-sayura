@@ -1,27 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Bon Keun Seo <scobyseo@gmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: fcitx\n"
+"Project-Id-Version: fcitx5-sayura\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2013-04-25 00:02-0400\n"
+"POT-Creation-Date: 2018-01-02 15:56-0800\n"
 "PO-Revision-Date: 2017-07-08 12:29+0000\n"
 "Last-Translator: Bon Keun Seo <scobyseo@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/fcitx/fcitx/language/ko/)\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: data/fcitx-sayura.conf.in:4
+msgid "Sayura Sinhala Input Method For Fcitx"
+msgstr "사유라 싱할라어 (스리랑카) Fcitx 입력기"
 
 #: src/eim.c:205 data/fcitx-sayura.conf.in:3 data/sayura.conf.in:3
 msgid "Sinhala (Sayura)"
 msgstr "싱할라어 (사유라)"
 
-#: data/fcitx-sayura.conf.in:4
-msgid "Sayura Sinhala Input Method For Fcitx"
-msgstr "사유라 싱할라어 (스리랑카) Fcitx 입력기"
+#: src/fcitx-sayura.conf.in:3
+msgid "fcitx-sayura"
+msgstr ""
