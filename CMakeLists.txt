@@ -17,6 +17,6 @@ include("${FCITX_INSTALL_CMAKECONFIG_DIR}/Fcitx5Utils/Fcitx5CompilerSettings.cma
 
 add_definitions(-DFCITX_GETTEXT_DOMAIN=\"fcitx5-sayura\" -D_GNU_SOURCE)
 
-# add_subdirectory(po)
-# add_subdirectory(src)
-# add_subdirectory(data)
+add_subdirectory(po)
+add_subdirectory(src)
+add_subdirectory(data)

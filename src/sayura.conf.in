@@ -1,7 +1,5 @@
 [InputMethod]
-UniqueName=sayura
-_Name=Sinhala (Sayura)
-IconName=sayura
-Priority=1
+Name=Sinhala (Sayura)
+Icon=fcitx-sayura
 LangCode=si
-Parent=fcitx-sayura
+Addon=sayura
