@@ -8,7 +8,6 @@ include(ECMUninstallTarget)
 
 find_package(PkgConfig REQUIRED)
 find_package(Fcitx5Core REQUIRED)
-find_package(Iconv REQUIRED)
 find_package(Gettext REQUIRED)
 
 include("${FCITX_INSTALL_CMAKECONFIG_DIR}/Fcitx5Utils/Fcitx5CompilerSettings.cmake")
