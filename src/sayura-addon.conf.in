@@ -1,6 +1,6 @@
 [Addon]
-Name=Sinhala (Sayura)
-Comment=Sayura Sinhala Input Method For Fcitx
+Name=Sayura Sinhala Input Method For Fcitx
 Category=InputMethod
 Library=sayura
 Type=SharedLibrary
+OnDemand=True

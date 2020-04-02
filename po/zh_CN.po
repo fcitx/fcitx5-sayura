@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fcitx5-sayura\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2018-01-02 15:56-0800\n"
+"POT-Creation-Date: 2020-04-02 10:25-0700\n"
 "PO-Revision-Date: 2013-04-29 10:21+0000\n"
 "Last-Translator: csslayer <wengxt@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/fcitx/fcitx/"
@@ -19,14 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: data/fcitx-sayura.conf.in:4
+#: data/fcitx-sayura.conf.in:4 src/sayura-addon.conf.in:3
 msgid "Sayura Sinhala Input Method For Fcitx"
 msgstr "Fcitx 的 Sayura 僧伽罗语输入法"
 
 #: src/eim.c:205 data/fcitx-sayura.conf.in:3 data/sayura.conf.in:3
+#: src/sayura.conf.in:3
 msgid "Sinhala (Sayura)"
 msgstr "僧伽罗语 (Sayura)"
-
-#: src/fcitx-sayura.conf.in:3
-msgid "fcitx-sayura"
-msgstr ""

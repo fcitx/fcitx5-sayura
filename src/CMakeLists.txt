@@ -1,8 +1,6 @@
-set(SAYURA_SOURCES
-    engine.cpp
-)
-add_library(sayura MODULE ${SAYURA_SOURCES})
-target_link_libraries(sayura Fcitx5::Core Fcitx5::Config)
+add_library(sayura MODULE sayura.cpp)
+target_link_libraries(sayura Fcitx5::Core Iconv::Iconv)
+target_include_directories(sayura PRIVATE ${PROJECT_BINARY_DIR})
 set_target_properties(sayura PROPERTIES PREFIX "")
 install(TARGETS sayura DESTINATION "${CMAKE_INSTALL_LIBDIR}/fcitx5")
 fcitx5_translate_desktop_file(sayura.conf.in sayura.conf)
