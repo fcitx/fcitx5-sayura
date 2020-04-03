@@ -1,18 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the fcitx5-sayura package.
 #
 # Translators:
-# Thu Hoai <contact@bizover.net>, 2013
+# csslayer <wengxt@gmail.com>, 2020
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx5-sayura\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2020-04-02 10:25-0700\n"
-"PO-Revision-Date: 2013-07-30 14:58+0000\n"
-"Last-Translator: Thu Hoai <contact@bizover.net>\n"
-"Language-Team: Vietnamese (http://www.transifex.com/fcitx/fcitx/language/"
-"vi/)\n"
+"POT-Creation-Date: 2020-04-03 00:02-0700\n"
+"PO-Revision-Date: 2020-04-02 17:32+0000\n"
+"Last-Translator: csslayer <wengxt@gmail.com>, 2020\n"
+"Language-Team: Vietnamese (https://www.transifex.com/fcitx/teams/12005/vi/)\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
