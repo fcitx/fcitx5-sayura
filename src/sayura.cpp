@@ -295,7 +295,7 @@ void SayuraEngine::keyEvent(const InputMethodEntry &entry, KeyEvent &keyEvent) {
         return;
     }
 
-    if (key.states() != KeyState::None) {
+    if (key.states() != KeyState::NoState) {
         return;
     }
     auto consonant = findConsonantByKey(key.sym());
