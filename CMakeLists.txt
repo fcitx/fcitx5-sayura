@@ -17,4 +17,9 @@ add_subdirectory(src)
 add_subdirectory(data)
 add_subdirectory(po)
 
+fcitx5_translate_desktop_file(org.fcitx.fcitx5-sayura.metainfo.xml.in
+                              org.fcitx.fcitx5-sayura.metainfo.xml XML)
+
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/org.fcitx.fcitx5-sayura.metainfo.xml" DESTINATION ${CMAKE_INSTALL_DATADIR}/metainfo)
+
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
