@@ -8,6 +8,7 @@
 #ifndef _FCITX5_SAYURA_SAYURA_H_
 #define _FCITX5_SAYURA_SAYURA_H_
 
+#include <fcitx-utils/i18n.h>
 #include <fcitx/addonfactory.h>
 #include <fcitx/addonmanager.h>
 #include <fcitx/inputcontextproperty.h>
@@ -39,6 +40,7 @@ private:
 class SayuraFactory : public AddonFactory {
 public:
     AddonInstance *create(AddonManager *manager) override {
+        registerDomain("fcitx5-sayura", FCITX_INSTALL_LOCALEDIR);
         return new SayuraEngine(manager->instance());
     }
 };
