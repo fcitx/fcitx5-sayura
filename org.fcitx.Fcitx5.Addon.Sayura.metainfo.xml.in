@@ -7,6 +7,8 @@
   <name>Sayura</name>
   <summary>Sinhala input method</summary>
   <url type="homepage">https://fcitx-im.org</url>
+  <url type="bugtracker">https://github.com/fcitx/fcitx5-sayura/issues</url>
+  <project_group>Fcitx</project_group>
   <releases>
     <release version="5.0.0" date="2020-10-30"/>
   </releases>
