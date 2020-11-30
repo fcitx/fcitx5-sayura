@@ -1,8 +1,3 @@
-install(FILES sayura.svg DESTINATION "${CMAKE_INSTALL_DATADIR}/icons/hicolor/scalable/apps/"
-        RENAME fcitx-sayura.svg)
-set(sizes 16 24 32 48 64 128 192)
-foreach(size ${sizes})
-  install(FILES "sayura${size}.png"
-    DESTINATION "${CMAKE_INSTALL_DATADIR}/icons/hicolor/${size}x${size}/apps/"
-    RENAME fcitx-sayura.png)
-endforeach()
+install(DIRECTORY 16x16 24x24 32x32 48x48 64x64 128x128 scalable DESTINATION "${CMAKE_INSTALL_DATADIR}/icons/hicolor"
+        PATTERN .* EXCLUDE
+        PATTERN *~ EXCLUDE)
