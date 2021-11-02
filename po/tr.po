@@ -4,14 +4,15 @@
 #
 # Translators:
 # csslayer <wengxt@gmail.com>, 2020
+# abc Def <hdogan1974@gmail.com>, 2021
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx5-sayura\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2020-11-02 15:56-0800\n"
+"POT-Creation-Date: 2021-11-02 20:24+0000\n"
 "PO-Revision-Date: 2020-04-02 17:32+0000\n"
-"Last-Translator: csslayer <wengxt@gmail.com>, 2020\n"
+"Last-Translator: abc Def <hdogan1974@gmail.com>, 2021\n"
 "Language-Team: Turkish (https://www.transifex.com/fcitx/teams/12005/tr/)\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -19,11 +20,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: org.fcitx.fcitx5-sayura.metainfo.xml.in:7
+#: org.fcitx.Fcitx5.Addon.Sayura.metainfo.xml.in:7
 msgid "Sayura"
-msgstr ""
+msgstr "Sayura"
 
-#: src/sayura-addon.conf.in:3
+#: src/sayura-addon.conf.in.in:3
 msgid "Sayura Sinhala Input Method For Fcitx"
 msgstr "Fcitx için Sayura Sinhala Giriş Yöntemi"
 
@@ -31,6 +32,6 @@ msgstr "Fcitx için Sayura Sinhala Giriş Yöntemi"
 msgid "Sinhala (Sayura)"
 msgstr "Sinhala (Sayura)"
 
-#: org.fcitx.fcitx5-sayura.metainfo.xml.in:8
+#: org.fcitx.Fcitx5.Addon.Sayura.metainfo.xml.in:8
 msgid "Sinhala input method"
-msgstr ""
+msgstr "Sinhala giriş yöntemi"
