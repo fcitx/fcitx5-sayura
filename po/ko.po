@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the fcitx5-sayura package.
 #
 # Translators:
-# JungHee Lee <daemul72@gmail.com>, 2022
+# Junghee Lee <daemul72@gmail.com>, 2022
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx5-sayura\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2022-03-01 20:24+0000\n"
+"POT-Creation-Date: 2022-04-09 20:24+0000\n"
 "PO-Revision-Date: 2020-04-02 17:32+0000\n"
-"Last-Translator: JungHee Lee <daemul72@gmail.com>, 2022\n"
+"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2022\n"
 "Language-Team: Korean (https://www.transifex.com/fcitx/teams/12005/ko/)\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -33,4 +33,4 @@ msgstr "싱할라어 (Sayura)"
 
 #: org.fcitx.Fcitx5.Addon.Sayura.metainfo.xml.in:8
 msgid "Sinhala input method"
-msgstr ""
+msgstr "싱할라어 입력기"
