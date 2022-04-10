@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fcitx5-sayura\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2022-04-09 20:24+0000\n"
+"POT-Creation-Date: 2022-04-10 20:25+0000\n"
 "PO-Revision-Date: 2020-04-02 17:32+0000\n"
 "Last-Translator: Junghee Lee <daemul72@gmail.com>, 2022\n"
 "Language-Team: Korean (https://www.transifex.com/fcitx/teams/12005/ko/)\n"
@@ -25,11 +25,11 @@ msgstr "Sayura"
 
 #: src/sayura-addon.conf.in.in:3
 msgid "Sayura Sinhala Input Method For Fcitx"
-msgstr "Sayura 싱할라어 (스리랑카) Fcitx 입력기"
+msgstr "Fcitx용 Sayura 스리랑카어 입력기"
 
 #: src/sayura.conf.in:3
 msgid "Sinhala (Sayura)"
-msgstr "싱할라어 (Sayura)"
+msgstr "스리랑카어 (Sayura)"
 
 #: org.fcitx.Fcitx5.Addon.Sayura.metainfo.xml.in:8
 msgid "Sinhala input method"
