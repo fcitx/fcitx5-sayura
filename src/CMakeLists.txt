@@ -1,4 +1,4 @@
-add_library(sayura MODULE sayura.cpp)
+add_fcitx5_addon(sayura sayura.cpp)
 target_link_libraries(sayura Fcitx5::Core)
 install(TARGETS sayura DESTINATION "${CMAKE_INSTALL_LIBDIR}/fcitx5")
 fcitx5_translate_desktop_file(sayura.conf.in sayura.conf)

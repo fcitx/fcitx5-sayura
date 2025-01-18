@@ -6,14 +6,30 @@
  *
  */
 #include "sayura.h"
-#include <deque>
+#include <array>
+#include <cstddef>
+#include <cstdint>
+#include <fcitx-utils/capabilityflags.h>
+#include <fcitx-utils/key.h>
+#include <fcitx-utils/keysym.h>
 #include <fcitx-utils/log.h>
+#include <fcitx-utils/textformatflags.h>
 #include <fcitx-utils/utf8.h>
+#include <fcitx/addoninstance.h>
+#include <fcitx/event.h>
 #include <fcitx/inputcontext.h>
 #include <fcitx/inputcontextmanager.h>
+#include <fcitx/inputmethodentry.h>
 #include <fcitx/inputpanel.h>
+#include <fcitx/text.h>
+#include <fcitx/userinterface.h>
+#include <string>
+#include <unordered_map>
+#include <vector>
 
 namespace fcitx {
+
+namespace {
 
 struct SayuraConsonant {
     uint32_t character;
@@ -87,7 +103,7 @@ const typename Map::mapped_type *findValue(const Map &map, const Key &key) {
 }
 
 template <size_t n>
-const std::unordered_map<uint32_t, SayuraConsonant>
+std::unordered_map<uint32_t, SayuraConsonant>
 fillConsonantMap(const std::array<SayuraConsonant, n> &data) {
     std::unordered_map<uint32_t, SayuraConsonant> result;
     for (const auto &item : data) {
@@ -104,22 +120,24 @@ fillConsonantMap(const std::array<SayuraConsonant, n> &data) {
     return result;
 }
 
-static const SayuraConsonant *findConsonant(uint32_t c) {
+const SayuraConsonant *findConsonant(uint32_t c) {
     static const auto map = fillConsonantMap(consonants);
     return findValue(map, c);
 }
 
-static const SayuraConsonant *findConsonantByKey(KeySym sym) {
+const SayuraConsonant *findConsonantByKey(KeySym sym) {
     static const auto map = fillKeyMap(consonants);
     return findValue(map, sym);
 }
 
-static const SayuraVowel *findVowelByKey(KeySym sym) {
+const SayuraVowel *findVowelByKey(KeySym sym) {
     static const auto map = fillKeyMap(vowels);
     return findValue(map, sym);
 }
 
 bool isConsonant(uint32_t c) { return (c >= 0x0d9a) && (c <= 0x0dc6); }
+
+} // namespace
 
 class SayuraState : public InputContextProperty {
 public:
@@ -169,7 +187,7 @@ public:
             return;
         }
 
-        auto first = findConsonant(buffer_.front());
+        const auto *first = findConsonant(buffer_.front());
         if (first) {
             switch (consonant.key) {
             case FcitxKey_w:
@@ -261,19 +279,20 @@ SayuraEngine::SayuraEngine(Instance *instance)
 
 SayuraEngine::~SayuraEngine() {}
 
-void SayuraEngine::activate(const InputMethodEntry &, InputContextEvent &) {}
+void SayuraEngine::activate(const InputMethodEntry & /*entry*/,
+                            InputContextEvent & /*event*/) {}
 
-void SayuraEngine::deactivate(const InputMethodEntry &,
+void SayuraEngine::deactivate(const InputMethodEntry & /*entry*/,
                               InputContextEvent &event) {
-    auto state = event.inputContext()->propertyFor(&factory_);
+    auto *state = event.inputContext()->propertyFor(&factory_);
     state->commitPreedit();
     state->updateUI();
 }
 
 void SayuraEngine::keyEvent(const InputMethodEntry &entry, KeyEvent &keyEvent) {
     auto key = keyEvent.key();
-    auto ic = keyEvent.inputContext();
-    auto state = ic->propertyFor(&factory_);
+    auto *ic = keyEvent.inputContext();
+    auto *state = ic->propertyFor(&factory_);
     if (keyEvent.isRelease()) {
         return;
     }
@@ -298,7 +317,7 @@ void SayuraEngine::keyEvent(const InputMethodEntry &entry, KeyEvent &keyEvent) {
     if (key.states() != KeyState::NoState) {
         return;
     }
-    auto consonant = findConsonantByKey(key.sym());
+    const auto *consonant = findConsonantByKey(key.sym());
     if (consonant) {
         state->handleConsonant(*consonant);
         state->updateUI();
@@ -306,7 +325,7 @@ void SayuraEngine::keyEvent(const InputMethodEntry &entry, KeyEvent &keyEvent) {
         return;
     }
 
-    auto vowel = findVowelByKey(key.sym());
+    const auto *vowel = findVowelByKey(key.sym());
     if (vowel) {
         state->handleVowel(*vowel);
         state->updateUI();
@@ -322,11 +341,12 @@ void SayuraEngine::keyEvent(const InputMethodEntry &entry, KeyEvent &keyEvent) {
     state->updateUI();
 }
 
-void SayuraEngine::reset(const InputMethodEntry &, InputContextEvent &event) {
-    auto state = event.inputContext()->propertyFor(&factory_);
+void SayuraEngine::reset(const InputMethodEntry & /*entry*/,
+                         InputContextEvent &event) {
+    auto *state = event.inputContext()->propertyFor(&factory_);
     state->reset();
 }
 
 } // namespace fcitx
 
-FCITX_ADDON_FACTORY(fcitx::SayuraFactory);
+FCITX_ADDON_FACTORY_V2(sayura, fcitx::SayuraFactory);

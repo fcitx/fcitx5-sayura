@@ -10,7 +10,9 @@
 
 #include <fcitx-utils/i18n.h>
 #include <fcitx/addonfactory.h>
+#include <fcitx/addoninstance.h>
 #include <fcitx/addonmanager.h>
+#include <fcitx/event.h>
 #include <fcitx/inputcontextproperty.h>
 #include <fcitx/inputmethodengine.h>
 #include <fcitx/instance.h>
@@ -29,7 +31,7 @@ public:
     void keyEvent(const InputMethodEntry &entry, KeyEvent &keyEvent) override;
     void reset(const InputMethodEntry &entry,
                InputContextEvent &event) override;
-    void deactivate(const fcitx::InputMethodEntry &,
+    void deactivate(const fcitx::InputMethodEntry & /*entry*/,
                     fcitx::InputContextEvent &event) override;
 
 private:

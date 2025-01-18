@@ -5,3 +5,6 @@ Version=@PROJECT_VERSION@
 Library=libsayura
 Type=SharedLibrary
 OnDemand=True
+
+[Addon/Dependencies]
+0=core:@REQUIRED_FCITX_VERSION@
