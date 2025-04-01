@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.10)
 project(fcitx5-sayura VERSION 5.1.3)
 
 set(REQUIRED_FCITX_VERSION 5.1.12)
